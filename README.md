@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+[marybm.dev](https://marybm.dev) was buit using Next.js, a React framework with a Node backend.
