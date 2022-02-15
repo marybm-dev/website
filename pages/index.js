@@ -15,7 +15,7 @@ export default function Home() {
       </section>
 
       <section className={utilStyles.socialContainer}>
-        <a href="https://www.linkedin.com/in/devmarymartinez/" className={utilStyles.socialBtn}>
+        <a href="https://www.linkedin.com/in/marybm/" className={utilStyles.socialBtn}>
           <Image
             src="/images/linkedin.png"
             height={44}
@@ -23,7 +23,7 @@ export default function Home() {
             alt="linkedin profile"
           />
         </a>
-        <a href="https://twitter.com/marym_dev" className={utilStyles.socialBtn}>
+        <a href="https://twitter.com/marybm_dev" className={utilStyles.socialBtn}>
           <Image
             src="/images/twitter.png"
             height={44}
@@ -31,7 +31,7 @@ export default function Home() {
             alt="twitter profile"
           />
         </a>
-        <a href="https://github.com/mlmc03" className={utilStyles.socialBtn}>
+        <a href="https://github.com/marybm-dev" className={utilStyles.socialBtn}>
           <Image
             src="/images/github.png"
             height={44}
