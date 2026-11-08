@@ -91,6 +91,11 @@ export const projects = [
   },
   {
     title: 'VOFocus',
+    icon: '/images/projects/vofocus-icon.png',
+    banner: {
+      src: '/images/projects/vofocus-banner.jpg',
+      alt: 'VOFocus: real VoiceOver focus order, verified by agents and CI. Shows a list of three items with focus on item 2 and a speech bubble.',
+    },
     kind: 'Open source · in progress',
     summary:
       'Automated checks of real VoiceOver focus order. Most a11y tooling walks the accessibility tree, which can\'t tell you where VoiceOver lands when a sheet, error, or banner appears. VOFocus drives VoiceOver itself, so an agent or CI job can verify it.',

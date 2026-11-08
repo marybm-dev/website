@@ -94,6 +94,9 @@ const ProjectsPanel = (
               <p className="meta">{p.kind}</p>
             </div>
           </div>
+          {p.banner && (
+            <img className="banner" src={p.banner.src} alt={p.banner.alt} width={1000} height={500} loading="lazy" />
+          )}
           <p>{p.summary}</p>
           {p.screenshots && (
             <div className="shots" role="region" aria-label={p.galleryLabel || `${p.title} screenshots`} tabIndex={0}>

@@ -370,3 +370,7 @@ h3 { font-size: 1.2rem; margin: 0; }
   color: var(--on-accent); font: 700 1.15rem var(--mono); letter-spacing: -0.02em;
 }
 .app-icon.small.monogram { font-size: 0.85rem; }
+.banner {
+  display: block; width: 100%; height: auto; margin: 0.25rem 0 1rem;
+  border-radius: 12px; border: 1px solid var(--border);
+}
