@@ -240,6 +240,12 @@ export const experience = [
 
 export const writing = [
   {
+    title: 'Diversity in Real Life at Open Mic',
+    where: 'LinkedIn',
+    year: '2017',
+    href: 'https://www.linkedin.com/pulse/diversity-real-life-open-mic-mary-martinez/',
+  },
+  {
     title: 'Building Native Mobile Apps with FileMaker Data',
     where: 'Beezwax blog',
     year: '2016',
