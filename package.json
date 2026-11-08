@@ -3,12 +3,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve _static",
+    "start": "npx serve out",
     "export": "next build"
   },
   "dependencies": {
     "next": "16.4.5",
     "react": "19.3.1",
     "react-dom": "19.3.1"
+  },
+  "engines": {
+    "node": "26.x"
   }
 }
