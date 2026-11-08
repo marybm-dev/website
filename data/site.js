@@ -16,7 +16,7 @@ export const social = [
 ]
 
 export const about = [
-  "I've been building for iOS for about ten years, mostly in Swift, at Airbnb, Yelp, and LinkedIn. A lot of that work is under NDA, so this page covers the parts I can share: side projects, open source, and how I like to work.",
+  "I've been a software engineer for 14 years. I spent the first four as a generalist (databases, Android, web, whatever the job needed), and the last ten focused on iOS, mostly in Swift, at Airbnb, Yelp, and LinkedIn. A lot of that work is under NDA, so this page covers the parts I can share: side projects, open source, and how I like to work.",
   "Accessibility is my specialty, and good UX goes hand in hand with it. At work I focus on finding the pain points in how we build, fixing them, and making it easy for other engineers to ship accessible features without needing to be experts themselves.",
   "I care about the gap between \"the accessibility tree looks right\" and \"VoiceOver actually lands where it should.\" Lately I've been building tools so that gap gets checked automatically instead of by hand.",
   "I'm also deep into AI agents. At home I run a small fleet of bots on local models, and I'm building pipelines that let agents do real work behind human approval gates and automated checks.",
