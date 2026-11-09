@@ -18,7 +18,7 @@ export const social = [
 export const about = [
   "I've been a software engineer for 14 years. I spent the first four as a generalist (databases, Android, web, whatever the job needed), and the last ten focused on iOS, mostly in Swift, at Airbnb, Yelp, and LinkedIn. A lot of that work is under NDA, so this page covers the parts I can share: side projects, open source, and how I like to work.",
   "Accessibility is my specialty, and good UX goes hand in hand with it. At work I focus on finding the pain points in how we build, fixing them, and making it easy for other engineers to ship accessible features without needing to be experts themselves.",
-  "I care about the gap between \"the accessibility tree looks right\" and \"VoiceOver actually lands where it should.\" Lately I've been building tools so that gap gets checked automatically instead of by hand.",
+  "I care about the gap between \"the accessibility tree looks right\" and \"VoiceOver actually lands where it should.\"",
   "I'm also deep into AI agents. At home I run a small fleet of bots on local models, and I'm building pipelines that let agents do real work behind human approval gates and automated checks.",
   "Off the clock I'm a parent to a three-year-old, with a baby on the way, and two dogs. Free time goes to the kids and to building with AI.",
 ]
@@ -90,25 +90,6 @@ export const projects = [
     ],
   },
   {
-    title: 'VOFocus',
-    icon: '/images/projects/vofocus-icon.png',
-    banner: {
-      src: '/images/projects/vofocus-banner.jpg',
-      alt: 'VOFocus: real VoiceOver focus order, verified by agents and CI. Shows a list of three items with focus on item 2 and a speech bubble.',
-    },
-    kind: 'Open source · in progress',
-    summary:
-      'Automated checks of real VoiceOver focus order. Most a11y tooling walks the accessibility tree, which can\'t tell you where VoiceOver lands when a sheet, error, or banner appears. VOFocus drives VoiceOver itself, so an agent or CI job can verify it.',
-    details: [
-      'Built on XCUIVoiceOverService (Xcode 27 / iOS 27)',
-      'A WebDriverAgent-style runner that drives any installed app over HTTP, with no test code in the app',
-      'Follows focus the app moves itself, like .screenChanged, .layoutChanged, and @AccessibilityFocusState',
-      'Next up: a CLI, YAML scenarios, and an MCP server for agents',
-    ],
-    tech: ['Swift', 'XCUITest', 'VoiceOver', 'CI'],
-    links: [],
-  },
-  {
     title: 'Puka Shreds!',
     icon: '/images/projects/puka-icon.jpg',
     galleryLabel: 'Puka Shreds! screenshots',
@@ -145,7 +126,7 @@ export const projects = [
     details: [
       'Split the bill, round up each share, quick-tip chips, and a bill it remembers for 10 minutes',
       'Decimal money math in a small, unit-tested model, with Swift 6 strict concurrency',
-      'Real VoiceOver focus order and announcements checked with VOFocus, plus Dynamic Type up to the largest size and Increase Contrast',
+      'Tested with VoiceOver, Dynamic Type up to the largest size, and Increase Contrast',
     ],
     tech: ['Swift', 'SwiftUI', 'Swift Testing', 'VoiceOver'],
     links: [],
