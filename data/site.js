@@ -131,6 +131,25 @@ export const projects = [
     tech: ['Swift', 'SpriteKit', 'SwiftUI'],
     links: [],
   },
+  {
+    title: 'Mr Tipster',
+    icon: '/images/projects/mrtipster-icon.png',
+    screenshots: [
+      { src: '/images/projects/mrtipster-light.jpg', w: 400, h: 869, alt: 'Light mode: an $86.40 bill split three ways at a 20% tip, so each person pays $34.56. The mustache says "Mr Tipster approves!"' },
+      { src: '/images/projects/mrtipster-dark.jpg', w: 400, h: 869, alt: 'Dark mode at a 25% tip, each person pays $36.00. The mustache says "Splendid! Most generous."' },
+      { src: '/images/projects/mrtipster-settings.jpg', w: 400, h: 869, alt: 'Settings: an 18% default tip and a currency list with flags for US Dollar, Euro, British Pound, Japanese Yen, and Indian Rupee' },
+    ],
+    kind: 'iOS app · revived in 2026',
+    summary:
+      'A tip calculator with a mustache that has opinions. I first built it in 2017 for CodePath, and my wife kept asking for it back, so it got a full SwiftUI rebuild. The mustache droops at stingy tips and twirls at generous ones.',
+    details: [
+      'Split the bill, round up each share, quick-tip chips, and a bill it remembers for 10 minutes',
+      'Decimal money math in a small, unit-tested model, with Swift 6 strict concurrency',
+      'Real VoiceOver focus order and announcements checked with VOFocus, plus Dynamic Type up to the largest size and Increase Contrast',
+    ],
+    tech: ['Swift', 'SwiftUI', 'Swift Testing', 'VoiceOver'],
+    links: [],
+  },
 ]
 
 export const ai = {
