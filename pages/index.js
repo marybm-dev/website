@@ -193,11 +193,15 @@ const CareerPanel = (
             <div className="row-text">
               <span>
                 <strong>{w.title}</strong>
-                {' · '}
-                <External href={w.link.href}>
-                  {w.link.label}
-                  <span className="visually-hidden"> for {w.title}</span>
-                </External>
+                {w.link && (
+                  <>
+                    {' · '}
+                    <External href={w.link.href}>
+                      {w.link.label}
+                      <span className="visually-hidden"> for {w.title}</span>
+                    </External>
+                  </>
+                )}
               </span>
               <span className="meta">{w.summary} · {w.year}</span>
             </div>

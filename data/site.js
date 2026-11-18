@@ -145,21 +145,15 @@ export const ai = {
     },
     {
       name: 'FunBot',
-      role: 'Bitcoin trading bot',
+      role: 'Trading bot',
       summary:
-        'Trades BTC/USD on Kraken. Deterministic rules make every trade, sized with the Kelly criterion. The LLM layer only watches and investigates, never places orders. Separate dev and live clones, plus a read-only sandboxed assistant over live state.',
+        'Deterministic rules make every trade, sized with the Kelly criterion. The LLM layer only watches and investigates, never places orders.',
     },
     {
       name: 'Finn',
       role: 'Finance bot',
       summary:
-        'Household financial analyst. Reads statement exports, flags trends and anomalies, and frames everything around long-term goals.',
-    },
-    {
-      name: 'Maia',
-      role: 'Email bot',
-      summary:
-        'Inbox librarian. Triages and labels new mail, flags anything time-sensitive, and files older messages on a 30-day review rhythm.',
+        'Household financial analyst. Flags trends and anomalies, and frames everything around long-term goals.',
     },
     {
       name: 'Holi',
@@ -192,7 +186,6 @@ export const earlierWork = [
     icon: '/images/projects/dressrelief-icon.png',
     summary: 'A "smart closet" iOS app that generates outfits from your own wardrobe. Built with Realm and UIKit, with custom transitions and animations.',
     year: '2017',
-    link: { label: 'GitHub', href: 'https://github.com/marybm-dev/DressRelief' },
   },
   {
     title: 'SwiftFM & DroidFM',
@@ -230,7 +223,6 @@ export const openSource = [
   },
 ]
 
-// TODO(Mary): confirm titles/order — Yelp & LinkedIn titles came from a third-party profile.
 export const experience = [
   { company: 'Airbnb', title: 'Staff Software Engineer, iOS', note: 'Accessibility' },
   { company: 'Yelp', title: 'Staff Software Engineer, iOS', note: 'Previously Senior' },
