@@ -374,3 +374,9 @@ h3 { font-size: 1.2rem; margin: 0; }
   display: block; width: 100%; height: auto; margin: 0.25rem 0 1rem;
   border-radius: 12px; border: 1px solid var(--border);
 }
+.diagram { margin: 0 0 1rem; }
+.diagram img {
+  display: block; width: 100%; height: auto;
+  border-radius: 12px; border: 1px solid var(--border);
+}
+.diagram figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 0.4rem; }

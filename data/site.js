@@ -18,7 +18,7 @@ export const social = [
 export const about = [
   "I've been a software engineer for 14 years. I spent the first four as a generalist (databases, Android, web, whatever the job needed), and the last ten focused on iOS, mostly in Swift, at Airbnb, Yelp, and LinkedIn. A lot of that work is under NDA, so this page covers the parts I can share: side projects, open source, and how I like to work.",
   "Accessibility is my specialty, and good UX goes hand in hand with it. At work I focus on finding the pain points in how we build, fixing them, and making it easy for other engineers to ship accessible features without needing to be experts themselves.",
-  "I care about the gap between \"the accessibility tree looks right\" and \"VoiceOver actually lands where it should.\"",
+  "I care about the gap between \"the accessibility tree looks right\" and \"VoiceOver actually lands where it should.\" Lately I've been building tools so that gap gets checked automatically instead of by hand.",
   "I'm also deep into AI agents. At home I run a small fleet of bots on local models, and I'm building pipelines that let agents do real work behind human approval gates and automated checks.",
   "Off the clock I'm a parent to a three-year-old, with a baby on the way, and two dogs. Free time goes to the kids and to building with AI.",
 ]
@@ -87,6 +87,35 @@ export const projects = [
     links: [
       { label: 'App Store', href: 'https://apps.apple.com/us/app/vibe-flow-music-visualizer/id6762640810' },
       { label: 'Support', href: '/vibeflow/support/' },
+    ],
+  },
+  {
+    title: 'VOFocus',
+    icon: '/images/projects/vofocus-icon.png',
+    banner: {
+      src: '/images/projects/vofocus-banner.jpg',
+      alt: 'VOFocus: real VoiceOver focus order, verified by agents and CI. Shows a list of three items with focus on item 2 and a speech bubble.',
+    },
+    kind: 'Open source · Apache 2.0',
+    summary:
+      'Automated checks of real VoiceOver focus order. Most a11y tooling walks the accessibility tree, which can\'t tell you where VoiceOver lands when a sheet, error, or banner appears. VOFocus drives VoiceOver itself, so an agent or CI job can verify it.',
+    details: [
+      'Drives the real VoiceOver through XCUIVoiceOverService (Xcode 27, iOS 27), on a Simulator or an iPhone over USB or Wi-Fi',
+      'A WebDriverAgent-style runner that checks any installed app over HTTP, with no test code in the app',
+      'YAML scenarios and a CLI for CI with JUnit reports, plus an MCP server so coding agents can check their own work',
+      'Follows focus the app moves itself (.screenChanged, .layoutChanged, @AccessibilityFocusState), and checks announcements, adjustable controls, and custom actions',
+      'Experimental: records what VoiceOver actually says and plays, including the boundary "bonk", without a microphone',
+    ],
+    diagram: {
+      light: '/images/projects/vofocus-architecture-light.svg',
+      dark: '/images/projects/vofocus-architecture-dark.svg',
+      caption: 'How it works: the full write-up',
+      href: 'https://github.com/marybm-dev/vofocus/blob/main/docs/ARCHITECTURE.md',
+      alt: 'VOFocus architecture. On the Mac, an AI agent uses the vofocus-mcp server and you or CI use the vofocus CLI; both send HTTP commands with a token to a runner on the iPhone or Simulator, over loopback or the CoreDevice tunnel (USB or Wi-Fi). The runner drives the real VoiceOver, which reads the unchanged app, and replies with what VoiceOver said. Optionally, VOFocus records VoiceOver\'s speech and sounds, never a microphone, and transcribes them on the Mac.',
+    },
+    tech: ['Swift', 'XCUITest', 'VoiceOver', 'MCP', 'CI'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/marybm-dev/vofocus' },
     ],
   },
   {

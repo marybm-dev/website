@@ -114,6 +114,21 @@ const ProjectsPanel = (
               {p.details.map((d) => <li key={d}>{d}</li>)}
             </ul>
           )}
+          {p.diagram && (
+            <figure className="diagram">
+              <picture>
+                <source media="(prefers-color-scheme: dark)" srcSet={p.diagram.dark} />
+                <img src={p.diagram.light} alt={p.diagram.alt} width={960} height={640} loading="lazy" />
+              </picture>
+              <figcaption>
+                {p.diagram.href ? (
+                  <External href={p.diagram.href}>
+                    {p.diagram.caption} <span aria-hidden="true">↗</span>
+                  </External>
+                ) : p.diagram.caption}
+              </figcaption>
+            </figure>
+          )}
           <Tags items={p.tech} />
           {p.links.length > 0 && (
             <p className="links">
