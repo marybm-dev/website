@@ -131,7 +131,9 @@ export const projects = [
       'Tested with VoiceOver, Dynamic Type up to the largest size, and Increase Contrast',
     ],
     tech: ['Swift', 'SwiftUI', 'Swift Testing', 'VoiceOver'],
-    links: [],
+    links: [
+      { label: 'Support', href: '/mrtipster/support/' },
+    ],
   },
 ]
 
