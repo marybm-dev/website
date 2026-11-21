@@ -86,7 +86,7 @@ export const projects = [
     tech: ['Swift', 'Metal', 'SwiftUI', 'AVAudioEngine', 'Accelerate', 'StoreKit 2'],
     links: [
       { label: 'App Store', href: 'https://apps.apple.com/us/app/vibe-flow-music-visualizer/id6762640810' },
-      { label: 'Support', href: 'https://marybm-dev.github.io/vibeflow-support/' },
+      { label: 'Support', href: '/vibeflow/support/' },
     ],
   },
   {
@@ -110,7 +110,9 @@ export const projects = [
       'A swipe-to-shred arcade game starring Puka, my Boston Terrier, who never met a cardboard box that survived the encounter. Ten themed levels, built with SpriteKit and SwiftUI.',
     details: [],
     tech: ['Swift', 'SpriteKit', 'SwiftUI'],
-    links: [],
+    links: [
+      { label: 'Support', href: '/pukashreds/support/' },
+    ],
   },
   {
     title: 'Mr Tipster',
