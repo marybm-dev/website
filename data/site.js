@@ -134,12 +134,13 @@ export const projects = [
       { src: '/images/projects/puka-level9.jpg', w: 400, h: 869, alt: 'Level 9, Food Truck Fiesta: Puka mid-swipe over the food trucks at sunset' },
       { src: '/images/projects/puka-level10.jpg', w: 400, h: 869, alt: 'Level 10, Puka\'s Dream: Puka leaps through a box among the floating bones' },
     ],
-    kind: 'iOS game · in development',
+    kind: 'iOS game · App Store',
     summary:
       'A swipe-to-shred arcade game starring Puka, my Boston Terrier, who never met a cardboard box that survived the encounter. Ten themed levels, built with SpriteKit and SwiftUI.',
     details: [],
     tech: ['Swift', 'SpriteKit', 'SwiftUI'],
     links: [
+      { label: 'App Store', href: 'https://apps.apple.com/us/app/puka-shreds/id6764086864' },
       { label: 'Support', href: '/pukashreds/support/' },
     ],
   },

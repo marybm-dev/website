@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 const SUPPORT_EMAIL = 'support@marybm.dev'
+const APP_STORE_URL = 'https://apps.apple.com/us/app/puka-shreds/id6764086864'
 
 export default function PukaShredsSupport() {
   return (
@@ -17,6 +18,7 @@ export default function PukaShredsSupport() {
           <h1>Puka Shreds! Support</h1>
         </div>
         <p>Puka Shreds! is a swipe-to-shred arcade game starring Puka, a Boston Terrier who never met a cardboard box that survived the encounter.</p>
+        <p><a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">Download on the App Store<span className="visually-hidden"> (opens in a new tab)</span></a></p>
 
         <div className="block">
           <h2>Contact</h2>
