@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 const SUPPORT_EMAIL = 'support@marybm.dev'
+const APP_STORE_URL = 'https://apps.apple.com/us/app/vibe-flow-music-visualizer/id6762640810'
 
 export default function VibeFlowSupport() {
   return (
@@ -14,6 +15,7 @@ export default function VibeFlowSupport() {
         <p><a href="/">marybm.dev</a> · <a href="/vibeflow/">Vibe Flow</a></p>
         <h1>Vibe Flow Support</h1>
         <p>Vibe Flow turns music into real-time neon visuals. Play music from any app, and Vibe Flow uses your device microphone to analyze the audio and generate procedural art that reacts to every beat, note and rhythm. Mirror to Apple TV with AirPlay for a big-screen experience.</p>
+        <p><a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">Download on the App Store<span className="visually-hidden"> (opens in a new tab)</span></a></p>
 
         <div className="block">
           <h2>FAQ</h2>
